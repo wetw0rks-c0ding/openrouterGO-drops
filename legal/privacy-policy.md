@@ -11,8 +11,13 @@ This app is unofficial and is not affiliated with OpenRouter.
 
 ## Network requests
 
-Requests go directly to `openrouter.ai`. The app contains no analytics, no
-advertisements, and no crash reporting.
+Requests to OpenRouter's API go directly to `openrouter.ai`. The app contains
+no analytics, no advertisements, and no crash reporting. In addition, the
+in-app update check reads a release manifest from the public
+`wetw0rks-c0ding/openrouterGO-drops` repository on GitHub, and the About
+screen opens the privacy policy and terms on `wetw0rks-c0ding.github.io`.
+Those requests contain no account data, and none of them is intermediated by
+the developer.
 
 ## Developer access
 
