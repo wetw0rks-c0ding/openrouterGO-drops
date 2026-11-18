@@ -1,5 +1,98 @@
 {
-  "version": "1.2.2",
+  "version": "1.2.3",
   "releasePageUrl": "https://github.com/wetw0rks-c0ding/openrouterGO-drops/releases/latest",
-  "playStoreUrl": null
+  "playStoreUrl": null,
+  "releases": [
+    {
+      "version": "1.2.3",
+      "publishedDate": "2026-11-17",
+      "preRelease": false,
+      "releasePageUrl": "https://github.com/wetw0rks-c0ding/openrouterGO-drops/releases/tag/v1.2.3",
+      "apkUrl": "https://github.com/wetw0rks-c0ding/openrouterGO-drops/releases/download/v1.2.3/OpenRouterGO-1.2.3-android.apk",
+      "ipaUrl": "https://github.com/wetw0rks-c0ding/openrouterGO-drops/releases/download/v1.2.3/OpenRouterGO-1.2.3-ios.ipa",
+      "playStoreUrl": null,
+      "features": [
+        "Morphe-style updates timeline on the updates screen: summary pills, expandable per-release rows, a pinned GitHub/Download bar, and relative dates.",
+        "Demo timeline fixture so the updates timeline can be exercised without a live release feed.",
+        "Headed release notes now backfill the `releases` array in the update manifest."
+      ],
+      "fixes": [
+        "Release dates compare as UTC calendar days, so the timeline is not off by one across daylight-saving transitions.",
+        "`latest.json` now carries a `releases` array."
+      ],
+      "optimizations": [
+        "Release notes are discovered by glob and ordered by numeric version, so new releases join the timeline without a publisher code change."
+      ]
+    },
+    {
+      "version": "1.2.2",
+      "publishedDate": "2026-11-15",
+      "preRelease": false,
+      "releasePageUrl": "https://github.com/wetw0rks-c0ding/openrouterGO-drops/releases/tag/v1.2.2",
+      "apkUrl": "https://github.com/wetw0rks-c0ding/openrouterGO-drops/releases/download/v1.2.2/OpenRouterGO-1.2.2-android.apk",
+      "ipaUrl": "https://github.com/wetw0rks-c0ding/openrouterGO-drops/releases/download/v1.2.2/OpenRouterGO-1.2.2-ios.ipa",
+      "playStoreUrl": null,
+      "features": [
+        "Web pages opened from the app (credits, management keys, model pages, release page, privacy/terms, and other help links) now always open in the in-app browser so you stay in the app.",
+        "If your device has no in-app browser available, the app now asks before opening the page in your external browser instead of silently leaving the app."
+      ],
+      "fixes": [],
+      "optimizations": []
+    },
+    {
+      "version": "1.2.1",
+      "publishedDate": "2026-11-03",
+      "preRelease": false,
+      "releasePageUrl": "https://github.com/wetw0rks-c0ding/openrouterGO-drops/releases/tag/v1.2.1",
+      "apkUrl": "https://github.com/wetw0rks-c0ding/openrouterGO-drops/releases/download/v1.2.1/OpenRouterGO-1.2.1-android.apk",
+      "ipaUrl": "https://github.com/wetw0rks-c0ding/openrouterGO-drops/releases/download/v1.2.1/OpenRouterGO-1.2.1-ios.ipa",
+      "playStoreUrl": null,
+      "features": [],
+      "fixes": [
+        "Login screen is no longer unmounted behind the app lock \u2014 the navigator stays mounted and an opaque cover stands in front of it, so an interrupted biometric prompt or a route change mid-lock can no longer drop an in-flight dialog or half-finished state.",
+        "App switcher / recents snapshots are covered on both platforms (`FLAG_SECURE` in release builds, app-switcher shield on both), now without unmounting the app behind the cover.",
+        "Demo mode keeps full bottom navigation; the demo banner is placed above the scaffold rather than replacing it.",
+        "Sign out and delete local data: a failure is now shown as a snackbar instead of an unhandled exception, and the working state always resets.",
+        "Database open errors at startup are reported by type, not raw exception text.",
+        "A device without a screen lock is no longer trap-locked out of the app \u2014 the app lock is opt-in for upgrades without a lock row."
+      ],
+      "optimizations": []
+    },
+    {
+      "version": "1.2.0",
+      "publishedDate": "2026-11-02",
+      "preRelease": false,
+      "releasePageUrl": "https://github.com/wetw0rks-c0ding/openrouterGO-drops/releases/tag/v1.2.0",
+      "apkUrl": "https://github.com/wetw0rks-c0ding/openrouterGO-drops/releases/download/v1.2.0/OpenRouterGO-1.2.0-android.apk",
+      "ipaUrl": "https://github.com/wetw0rks-c0ding/openrouterGO-drops/releases/download/v1.2.0/OpenRouterGO-1.2.0-ios.ipa",
+      "playStoreUrl": null,
+      "features": [
+        "**Demo mode** \u2014 configurable session mode with fixture data; no network required.",
+        "**App lock with PIN fallback** \u2014 grace period, lock screen, PIN unlock if biometric unavailable.",
+        "**Screen privacy** \u2014 `FLAG_SECURE`, app-switcher snapshot covered; Android screenshots blocked.",
+        "**About / Privacy / Terms** \u2014 new About page with links; in-app privacy policy and terms.",
+        "**Data deletion on sign-out** \u2014 \"Sign out and delete local data\" clears local storage and resets to onboarding.",
+        "**Dashboard \"Buy credits\"** \u2014 new billing links (`billingUrl`, `managementKeysPage`) on the dashboard.",
+        "**New identity** \u2014 package `dev.wetw0rks.openroutergo`; branding refreshed."
+      ],
+      "fixes": [],
+      "optimizations": []
+    },
+    {
+      "version": "1.0.1",
+      "publishedDate": "2026-10-21",
+      "preRelease": false,
+      "releasePageUrl": "https://github.com/wetw0rks-c0ding/openrouterGO-drops/releases/tag/v1.0.1",
+      "apkUrl": "https://github.com/wetw0rks-c0ding/openrouterGO-drops/releases/download/v1.0.1/OpenRouterGO-1.0.1-android.apk",
+      "ipaUrl": "https://github.com/wetw0rks-c0ding/openrouterGO-drops/releases/download/v1.0.1/OpenRouterGO-1.0.1-ios.ipa",
+      "playStoreUrl": null,
+      "features": [
+        "**The app asks for notification permission \u2014 once, and with a reason.** After the",
+        "**The app can tell you that there is a newer version.** Settings has a **Check for",
+        "**A key that was never sent is no longer reported as refused.** The dashboard used"
+      ],
+      "fixes": [],
+      "optimizations": []
+    }
+  ]
 }
